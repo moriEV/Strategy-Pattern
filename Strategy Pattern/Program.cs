@@ -6,7 +6,10 @@ internal class Program
     {
         Player player = new Player(new Sword(), "Pasha");
         Game game = new Game(player);
-        game.Start();
-        Console.ReadLine();
+        while (true)
+        {
+            game.Start();
+            Console.ReadLine();
+        }
     }
 }
